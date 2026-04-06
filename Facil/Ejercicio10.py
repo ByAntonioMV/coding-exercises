@@ -47,4 +47,7 @@
 #   - Usa ", ".join(lista) para imprimir la lista bonito
 # ============================================
 
-# Tu código aquí 👇
+# Tu código aquí
+
+oracion = input("Ingresa una oración => ")
+print(oracion)

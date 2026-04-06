@@ -44,5 +44,25 @@
 #   - Usa un contador para llevar los intentos
 #   - Usa break para salir del bucle si adivina
 # ============================================
+import random
 
-# Tu código aquí 👇
+# Tu código aquí 👇1
+N = random.randint(1,10)
+i = 1
+gano = 0
+while (i <= 3):
+     intento = int(input(f"Ingresa el {1} intento =>"))
+
+     if (intento > N):
+         print("Demaciado alto, intentalo de nuevo")
+     elif (intento < N):
+         print("Demaciado bajo, intentalo de nuevo")
+     elif (intento == N):
+         print(f"Acertaste el numero era {N}")
+         gano = 1
+         break
+
+     i += 1
+
+if (gano == 0):
+    print(f"Perdiste el número era {N}")

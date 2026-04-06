@@ -40,7 +40,15 @@
 # ============================================
 
 # Tu código aquí 👇
-
+N = int(input("¿De qué número quieres la tabla? "))
+if (N <= 10):
+    print(f"=====Tabla del {N} =====")
+    for i in range(1,11):
+        multiplicacion = N * i
+        print(f"{N} X {i} = {multiplicacion}")
+    print(f"=======================")
+else:
+    print("El numero no es valido")
 
 
 

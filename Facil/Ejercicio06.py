@@ -36,3 +36,14 @@
 # ============================================
 
 # Tu código aquí 👇
+
+celsius = float(input("Ingresa tu temperatura en celcius: "))
+fahrenheit = (celsius * 9/5) + 32
+kelvin = celsius + 273.15
+
+print("***********************")
+print("El resultado en las diferentes temperaturas es:")
+print(f"Celciuss: {celsius}")
+print(f"Fahrenheit: {fahrenheit}")
+print(f"Kelvin: {kelvin}")
+print("***********************")

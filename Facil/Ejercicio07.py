@@ -43,3 +43,14 @@
 # ============================================
 
 # Tu código aquí 👇
+
+N = int(input("Ingrese un número: "))
+
+if ((N % 2) == 0 and N > 0):
+    print(f"El numero {N} es par y positivo")
+elif ((N % 2) == 0 and N < 0):
+    print(f"El número {N} es par y negativo")
+elif (N > 0):
+    print(f"El numero {N} es impar y positivo")
+else:
+    print(f"El numero {N} es impar y negativo")

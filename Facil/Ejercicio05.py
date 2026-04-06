@@ -36,3 +36,21 @@
 # ============================================
 
 # Tu código aquí 👇
+
+total    = float(input("¿Cuál es el total de la cuenta? "))
+propina  = int(input("¿Cuánto de propina? (10, 15, 20): "))
+personas = int(input("¿Cuántas personas? "))
+
+# 2. Calcular propina y totales
+monto_propina  = round(total * propina / 100, 2)
+total_con_propina = round(total + monto_propina, 2)
+pago_por_persona  = round(total_con_propina / personas, 2)
+
+# 3. Mostrar resultados
+print()
+print("--------------------------")
+print(f"Total sin propina:  ${total:.2f}")
+print(f"Propina ({propina}%):      ${monto_propina:.2f}")
+print(f"Total con propina:  ${total_con_propina:.2f}")
+print(f"Cada persona paga:  ${pago_por_persona:.2f}")
+print("--------------------------")
