@@ -49,5 +49,18 @@
 
 # Tu código aquí
 
-oracion = input("Ingresa una oración => ")
-print(oracion)
+frase = input("Escribe una palabra o frase: ")
+
+vocales = "aeiouáéíóú"
+encontradas = []
+
+for letra in frase.lower():
+    if letra in vocales:
+        encontradas.append(letra)
+
+print()
+print("--------------------------")
+print(f"Texto:          {frase}")
+print(f"Total vocales:  {len(encontradas)}")
+print(f"Vocales found:  {', '.join(encontradas)}")
+print("--------------------------")
